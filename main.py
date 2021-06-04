@@ -1,7 +1,6 @@
 import textwrap
 import urllib.request
 import os
-from queue import Queue
 
 from dotenv import load_dotenv
 from labypy import Halo, Dragon, Wings, Fisher, Hand, Cape, Eyes, Horns

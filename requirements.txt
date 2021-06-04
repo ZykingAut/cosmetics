@@ -26,7 +26,6 @@ pytz==2021.1
 requests==2.25.1
 rfc3986==1.5.0
 s3transfer==0.4.2
-simple-image-download==0.4
 six==1.16.0
 sniffio==1.2.0
 spotipy==2.18.0
