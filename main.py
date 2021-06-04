@@ -2,7 +2,6 @@ import textwrap
 import urllib.request
 import os
 
-from dotenv import load_dotenv
 from labypy import Halo, Dragon, Wings, Fisher, Hand, Cape, Eyes, Horns
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -10,7 +9,6 @@ import time
 from threading import Thread
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 
-load_dotenv()
 cookie = os.getenv("LABYMOD_COOKIE")
 
 halo = Halo.Instance(cookie)
