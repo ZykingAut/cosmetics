@@ -1,5 +1,4 @@
 import textwrap
-import urllib.request
 import os
 
 from labypy import Halo, Dragon, Wings, Fisher, Hand, Cape, Eyes, Horns
@@ -8,6 +7,7 @@ from spotipy.oauth2 import SpotifyOAuth
 import time
 from threading import Thread
 from PIL import Image, ImageDraw, ImageFont, ImageColor
+from flask import Flask
 
 cookie = os.getenv("LABYMOD_COOKIE")
 
@@ -95,7 +95,7 @@ def get_spotify_stuff(song):
     artist_name = artist.get("name")
     image_data = album.get("images")[1]
     image_url = image_data.get("url")
-    urllib.request.urlretrieve(image_url, "spotify.png")
+    urllib3.request.urlretrieve(image_url, "spotify.png")
     song_name = str(song_name).split("(feat.")[0]
     if song_name == "Rauch":
         song_name = "Vani"
