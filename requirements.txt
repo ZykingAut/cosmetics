@@ -19,7 +19,7 @@ Jinja2==3.0.1
 keras-nightly==2.5.0.dev2021032900
 Keras-Preprocessing==1.1.2
 kiwisolver==1.3.1
-labypy==1.1
+labypy==1.2
 Markdown==3.3.4
 MarkupSafe==2.0.1
 matplotlib==3.4.2
