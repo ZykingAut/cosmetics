@@ -133,7 +133,7 @@ def red_fisher():
     hand.update("ff1d1d,1")
     eyes.update("ff1d1d")
     # cape_border(color)
-    #cape.update("cape.png")
+    # cape.update("cape.png")
     time.sleep(interval)
 
 
@@ -146,7 +146,7 @@ def white_fisher():
     hand.update("fdfdfd,1")
     eyes.update("fdfdfd")
     # cape_border(color)
-    #cape.update("cape.png")
+    # cape.update("cape.png")
     time.sleep(interval)
 
 
@@ -159,7 +159,7 @@ def light_blue_fisher():
     hand.update("00c9ff,1")
     eyes.update("00c9ff")
     # cape_border(color)
-    #cape.update("cape.png")
+    # cape.update("cape.png")
     time.sleep(interval)
 
 
