@@ -1,5 +1,6 @@
 import textwrap
 import os
+import urllib3
 
 from labypy import Halo, Dragon, Wings, Fisher, Hand, Cape, Eyes, Horns
 import spotipy
