@@ -96,7 +96,7 @@ def get_spotify_stuff(song):
     artist_name = artist.get("name")
     image_data = album.get("images")[1]
     image_url = image_data.get("url")
-    urllib3.request.urlretrieve(image_url, "spotify.png")
+    urllib.request.urlretrieve(image_url, "spotify.png")
     song_name = str(song_name).split("(feat.")[0]
     if song_name == "Rauch":
         song_name = "Vani"
