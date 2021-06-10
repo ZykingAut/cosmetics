@@ -11,14 +11,14 @@ from flask import Flask
 
 cookie = os.getenv("LABYMOD_COOKIE")
 
-halo = Halo.Instance(cookie)
-dragon = Dragon.Instance(cookie)
-wings = Wings.Instance(cookie)
-fisher = Fisher.Instance(cookie)
-hand = Hand.Instance(cookie)
-eyes = Eyes.Instance(cookie)
-horns = Horns.Instance(cookie)
-cape = Cape.Instance(cookie)
+halo = Halo.Instance(cookie, 707243)
+dragon = Dragon.Instance(cookie, 700508)
+wings = Wings.Instance(cookie, 674849)
+fisher = Fisher.Instance(cookie, 720901)
+hand = Hand.Instance(cookie, 678894)
+eyes = Eyes.Instance(cookie, 728066)
+horns = Horns.Instance(cookie, 673084)
+cape = Cape.Instance(cookie, 707244)
 
 interval = 75
 
