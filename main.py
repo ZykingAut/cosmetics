@@ -21,7 +21,7 @@ eyes = Eyes.Instance(cookie, 728066)
 horns = Horns.Instance(cookie, 673084)
 cape = Cape.Instance(cookie, 707244)
 
-interval = 75
+interval = 90
 
 dragons = {
     "ender": "17802074-54e6-43a9-8591-8602ec3366c8,1",
@@ -121,12 +121,8 @@ def spotify_cloak():
                     last_song_id = current_song_id
                     song_name, author_name = get_spotify_stuff(current_song)
                     create_cape(song_name, author_name)
-                    try:
-                        res = cape.update("cape.png")
-                    except HTTPError as err:
-                        if err.response.status_code == 429:
-                            time.sleep(5)
-                            res = cape.update("cape.png")
+                    cape.update("cape.png")
+                    print("Cape updated!")
         time.sleep(1)
 
 
