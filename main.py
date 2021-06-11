@@ -1,6 +1,7 @@
 import textwrap
 import os
 import urllib
+import sys
 
 from labypy import Halo, Dragon, Wings, Fisher, Hand, Cape, Eyes, Horns
 import spotipy
@@ -121,7 +122,21 @@ def spotify_cloak():
                     last_song_id = current_song_id
                     song_name, author_name = get_spotify_stuff(current_song)
                     create_cape(song_name, author_name)
-                    cape.update("cape.png")
+                    status = cape.update("cape.png")
+                    if status != 200:
+                        if status == 400:
+                            print("Bad request!")
+                            sys.exit()
+                        elif status == 403:
+                            print("You need to change your Labymod cookie!")
+                            sys.exit()
+                        elif status == 404:
+                            print("Site not found!")
+                            sys.exit()
+                        elif status == 429:
+                            print("You change your cosmetics too fast! Waiting...")
+                            time.sleep(5)
+                            cape.update("cape.png")
                     print("Cape updated!")
         time.sleep(1)
 
