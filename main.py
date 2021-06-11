@@ -122,11 +122,11 @@ def spotify_cloak():
                     song_name, author_name = get_spotify_stuff(current_song)
                     create_cape(song_name, author_name)
                     try:
-                        cape.update("cape.png")
+                        res = cape.update("cape.png")
                     except HTTPError as err:
                         if err.response.status_code == 429:
                             time.sleep(5)
-                            cape.update("cape.png")
+                            res = cape.update("cape.png")
         time.sleep(1)
 
 
